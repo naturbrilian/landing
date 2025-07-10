@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieba Natur Brilian</title>
+  <link rel="icon" type="image/x-icon" href="https://files.catbox.moe/ywlskv.gifv">
+    <style>
+      
+      @font-face {
+            font-family: "KGRedHands";
+            src: url('https://files.catbox.moe/g8w6mh.ttf');
+        }
+      
+      @font-face {
+            font-family: "04B_30";
+            src: url('https://files.catbox.moe/6g7apf.TTF');
+        }
+      
+        body {
+            font-family: "MS PGothic", sans-serif;
+            background: url("/assets/70804812_p2.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgba(71, 64, 106, 0.6);
+            background-blend-mode: lighten;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 111vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            background-color: #cad3d6;
+            width: 600px;
+            height: 500px;
+            overflow-y: auto;
+            padding: 20px;
+            border: 5px groove #2c2a42;
+            border-radius: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+            position: relative;
+            margin-right: -400px;
+        }
+
+        .header {
+            background: url("https://files.catbox.moe/slggsr.jpg");
+            background-size: 24%;
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            border: 2px outset #2c2a42;
+        }
+
+        .header button {
+            background-color: #cad3d6;
+            border: 2px inset #2c2a42;
+            border-radius: 5px;
+            padding: 8px 12px;
+            font-size: 14px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #191b21;
+            font-family: "KGRedHands";
+        }
+
+        .header button:hover {
+            background-color: #292b34;
+            color: #aebedc;
+        }
+
+        .title {
+            font-size: 24px;
+            color: #191b21;
+            margin-bottom: 10px;
+            text-align: left;
+            font-family: "04B_30";
+        }
+
+        .info {
+            font-size: 14px;
+            color: #242434;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .separator {
+            border-top: 2px dashed #2a2d40;
+            margin: 20px 0;
+        }
+
+        .section-title {
+            font-size: 1.4em;
+            color: #242434;
+            margin-bottom: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .text {
+            font-size: 1.1em;
+            color: #242434;
+            margin-bottom: 15px;
+        }
+
+        .text span {
+            font-weight: bold;
+            color: #9e0052;
+        }
+      
+      .text li {
+        list-style-image: url("https://files.catbox.moe/0ec7qv.gifv");
+      }
+      
+      .text a {
+        text-decoration: none;
+        color:#2a2d40;
+      }
+      
+      .text a:hover {
+        font-style: italic;
+        color: #940325;
+      }
+
+        .images {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .images img {
+            width: 70px;
+            height: 70px;
+            border-radius: 10px;
+            background-color: #ffe5e9;
+            padding: 10px;
+            border: 2px outset #2c2a42;
+        }
+
+        .footer {
+            font-size: 12px;
+            color: #c17a83;
+            margin-top: 55px;
+            text-align: center;
+        }
+      
+      .image {
+        position: relative;
+        z-index: 1000;
+      }
+
+      .decorative-image {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1000;
+    inset: auto;
+}
+
+.rana {
+    bottom: -277px;
+    left: 544px;
+    background-image: url('/assets/hk-416-1.png');
+    width: 476px;
+    height: 476px;
+}
+      
+      .rana2 {
+    bottom: -288px;
+    left: -145px;
+    background-image: url('/assets/hk-416-small.png');
+    width: 246px;
+    height: 246px;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+      
+       ::-webkit-scrollbar {
+            width: 6px;
+            height: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #ffe6f0;
+            border: 2px solid #eb9bad;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(90deg, rgba(255,188,188,1) 0%, rgba(255,225,116,1) 100%);
+            border-radius: 10px;
+            border: 2px solid #eb9bad;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(90deg, rgba(255,133,133,1) 0%, rgba(255,238,176,1) 100%);
+        }
+
+    </style>
+    
+</head>
+<body>
+  <div class="image">
+        <div class="decorative-image rana"></div>
+        <div class="decorative-image rana2"></div>
+  </div>
+  
+    <div class="container">
+        <div class="header">
+            <button>home</button>
+            <button>about</button>
+            <button>guestbook</button>
+            <button>link</button>
+        </div>
+
+        <div class="title">Lieba Natur Brilian</div>
+        <div class="info">Welcome to My Landing Page</div>
+
+        <div class="separator"></div>
+
+        <div class="section active">
+            <div class="section-title">About this site</div>
+            <div class="text"><p>Hello i am Lieba Natur Brilian also people call me with Natur. I am graphics designer, video editor and translator contributor for various services, apps and software. Im also like watching anime and multifandom. Also people know me as gingalibadeidara on another website like alphacoders.</p>
+                <p>For contact me, hit the link section</p></div>
+            <div class="images">
+                <img src="/assets/hk-416-2.png">
+                <img src="/assets/hk-416-3.png">
+                <img src="https://files.catbox.moe/wvxfiz.pnj">
+                <img src="https://files.catbox.moe/sfdxtt.pnj">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">about me</div>
+            <div class="text">I’m Liba Natur Brilian and also known as Natur or gingalibadeidara, a video editor and graphics designer with a deep passion for technology, art, music and content creator.</div>
+            <div class="text">Here, I share my recent project like design, video editing, vector, and blogging. I hope this platform can be a space to share inspiration, ideas, and engaging discussions with you.</div>
+            <div class="text">Interesting On</div>
+            <div class="text">Technologies</div>
+            <div class="text">Already interested in technology since elementary school, initially because of the internet cafe era at that time. At first, I only knew the games that came with the operating system, then in 2007 I got to know the internet and others.</div>
+            <div class="text">Music</div>
+            <div class="text">At first, it was because my father himself almost every Sunday morning played songs through a VCD player and cassette tape. At first, he was only interested in the genre of old western songs, then Indonesian songs, then to Kpop because of his junior high school friends at that time (yes,you know Super Junior and SNSD) until finally to JPop songs until now. Oh yes i also like classical music, Doujin music like touhou and etc.</div>
+            <div class="text">Anime</div>
+            <div class="text">It started with anime that aired on Indonesian TV stations. The first anime I watched was Naruto, and then in 2012 I started to get interested in Little Busters (yes, this is also one of my favorite anime), and finally I continued until now, even though I rarely watch it anymore. And progress anime i watch now you can check my Anilist</div>
+            <div class="text">Game & Visual novel</div>
+            <div class="text">Well, for this game and visual novel, I was initially curious, starting from hearing the song nightcore (what sped calls it now), and curious because the artwork used in the video was sourced from fan art, anime or from other sources. It turned out that it came from Visual Novel & because from here I started to be interested in playing Visual Novel. At that time, the Visual Novel that was being hotly discussed was Koi Kakeru Shin Ai Kanojo. As for the game itself, it started because of my school friend who played the game Bully Scholarship, and the first mobile game I played was THE IDOLM@STER: CINDERELLA GIRLS STARLIGHTS or known as deresute.</div>
+            <div class="text">Translation</div>
+            <div class="text">To be honest, I first became interested in the world of translation when I learned to make karaoke effects and subtitles. In 2016 I started to dive into the world of translation, even though this was not my major at school. At first it was just to fill my free time, because of my interest in language lessons, both Indonesian and English. And this must be developed further, especially since I want to be able to speak German, Japanese, and Mandarin.</div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">guestbook</div>
+            <div class="text"> Embed your guestbook here. I recommend using <a href="https://atabook.org/" target="_blank">atabook.</a></div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Link</div>
+            <div class="text"><a href="https://naturbrilian.github.io/site/" target="_blank">Website.</a></div>
+            <div class="text"><a href="https://naturbrilian.nekoweb.org/links" target="_blank">Links.</a></div>
+            <div class="text"><a href="https://discord.com/users/304313603253862401" target="_blank">Discord</a></div>
+            <div class="text"><a href="https://www.linkedin.com/in/naturbrilian" target="_blank">LinkedIn</a></div>
+        </div>
+
+        <div class="footer">&copy; 2024 electric-tenshi.</div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.header button');
+            const sections = document.querySelectorAll('.section');
+
+            buttons.forEach((button, index) => {
+                button.addEventListener('click', () => {
+                    sections.forEach(section => section.classList.remove('active'));
+                    sections[index].classList.add('active');
+                });
+            });
+
+            // Show the first section by default
+            if (sections.length > 0) {
+                sections[0].classList.add('active');
+            }
+        });
+    </script>
+    
+</body>
+</html>
